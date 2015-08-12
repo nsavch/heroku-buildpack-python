@@ -1,6 +1,5 @@
 bpwatch start xxx-deps
 echo "-----> Installing xxx deps"
-apt-get install python-numpy python-matplotlib python-pandas
 curl --insecure https://www.smarterbase.com/assets/xxx-deps.tar | tar xf - -C /app/.heroku/python/lib/python2.7/
 find /app/.heroku/python/lib/python2.7/site-packages/ -name '*.so' -print -exec ldd {} \;
 bpwatch stop xxx-deps
