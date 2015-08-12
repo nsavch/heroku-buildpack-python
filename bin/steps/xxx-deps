@@ -1,4 +1,5 @@
 bpwatch start xxx-deps
 echo "-----> Installing xxx deps"
 curl --insecure https://www.smarterbase.com/assets/xxx-deps.tar | tar xf - -C /app/.heroku/python/lib/python2.7/
+ldd /app/.heroku/python/lib/python2.7/site-packages/psycopg2/_psycopg.so
 bpwatch stop xxx-deps
