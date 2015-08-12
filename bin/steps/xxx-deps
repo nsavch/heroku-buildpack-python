@@ -1,3 +1,4 @@
 bpwatch start xxx-deps
+echo "-----> Installing xxx deps"
 curl --insecure https://www.smarterbase.com/assets/xxx-deps.tar | tar xf - -C /app/.heroku/python/lib/python2.7/
 bpwatch stop xxx-deps
