@@ -1,3 +1,3 @@
 bpwatch start xxx-deps
-tar xf /xxx-deps.tar -C /app/.heroku/python/lib/python2.7/
+curl --insecure https://www.smarterbase.com/assets/xxx-deps.tar | tar xf - -C /app/.heroku/python/lib/python2.7/
 bpwatch stop xxx-deps
